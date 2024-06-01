@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #202020;
+    padding: 0.5em 1em;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.header-buttons .search-btn, .header-buttons .play-now-btn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.header-buttons .play-now-btn {
+    background: #ff4655;
+    border: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.hero .play-free-btn {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #ff4655;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.latest-news {
+    background: #fff;
+    color: #000;
+    padding: 2em;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 2em;
+    color: #ff4655;
+    margin-bottom: 1em;
+}
+
+.news-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    background: #f5f5f5;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-info {
+    padding: 1em;
+}
+
+.news-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.news-category {
+    font-size: 0.9em;
+    color: #ff4655;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+.news-title {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+
+.news-page-link {
+    display: inline-block;
+    margin-top: 1em;
+    color: #ff4655;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #1a1a2e; 
+    margin: 15% auto; 
+    padding: 20px; 
+   
+    width: 50%; 
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: 40%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-buttons div {
+    text-align: center;
+}
+
+.modal-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 30px; 
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em; 
+    min-width: 150px; 
+}
+
+.modal-btn-signin {
+    background-color: #ff4655;
+    color: #fff;
+}
+
+.modal-btn:hover {
+    opacity: 0.8;
+}

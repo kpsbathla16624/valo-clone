@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Riot Games Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">GAME INFO</a></li>
+                <li><a href="#">MEDIA</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">LEADERBOARDS</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">OUR SOCIALS</a></li>
+                <li><a href="#">MORE</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="search-btn">🔍</button>
+            <button class="play-now-btn" onclick="openModal()">PLAY NOW</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <video autoplay muted loop id="bg-video">
+                <source src="bgvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>VALORANT</h1>
+                <p>A 5v5 character-based tactical shooter</p>
+                <button class="play-free-btn">PLAY FREE</button>
+            </div>
+        </section>
+        <section class="latest-news">
+            <h2>LATEST NEWS</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="news1.jpg" alt="News 1">
+                    <div class="news-info">
+                        <span class="news-date">05/30/24</span>
+                        <span class="news-category">COMMUNITY</span>
+                        <h3 class="news-title">PUT YOUR PRIDE ON DISPLAY IN VALORANT</h3>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news2.jpg" alt="News 2">
+                    <div class="news-info">
+                        <span class="news-date">05/29/24</span>
+                        <span class="news-category">GAME UPDATES</span>
+                        <h3 class="news-title">VALORANT PATCH NOTES 8.10</h3>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news3.jpg" alt="News 3">
+                    <div class="news-info">
+                        <span class="news-date">05/22/24</span>
+                        <span class="news-category">ESPORTS</span>
+                        <h3 class="news-title">INSIDE THE MIND OF A PRO VALORANT DUELIST</h3>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="news-page-link">GO TO NEWS PAGE →</a>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2> / GET SET UP TO PLAY \</h2>
+            <div class="modal-buttons">
+                <div>
+                    <p>I don't have a Riot account yet</p>
+                    <button class="modal-btn">MAKE ONE</button>
+                </div>
+
+                <div>
+                    <p>I have a Riot account</p>
+                    <button class="modal-btn modal-btn-signin">SIGN IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+       
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
